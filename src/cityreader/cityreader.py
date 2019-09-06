@@ -33,11 +33,11 @@ def cityreader(cities=[]):
   # `cities` list
     
 
-  with open('d:/PythonProjects/Sprint-Challenge--Intro-Python/src/cityreader/cities.csv') as csv_file:
+  with open('cities.csv') as csv_file:
     reader = csv.reader(csv_file)
     csv_file.readline()
     for row in reader:
-      cities.append(City(row[0], float(row[3]), float(row[4])))
+      cities.append(City(row[0], row[3], row[4]))
 
     return cities
 
