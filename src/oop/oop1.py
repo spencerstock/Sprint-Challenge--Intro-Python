@@ -18,6 +18,8 @@
 #
 # Put a comment noting which class is the base class
 
+#Spencer Stock
+
 
 class Vehicle(): #Base Class
     pass
